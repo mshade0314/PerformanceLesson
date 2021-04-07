@@ -9,11 +9,10 @@ namespace PerformanceLesson3
     {
         static void Main(string[] args)
         {
-            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance); // memo: Shift-JISを扱うためのおまじない            
-
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance); // .net5でShift-JISを扱うためのおまじない
+            
             // 課題: bkdata.csvのaddr_kennoとaddr_sinoをm_ken.ken_name+m_si.si_nameに置換して画面に表示する
             // 出力例: 910504,×××サンシティつくば,宮城県仙台市泉区
-            
             var sw = new Stopwatch();
             sw.Start();
             var sb = new StringBuilder();
@@ -23,10 +22,8 @@ namespace PerformanceLesson3
             {
                 var line = sr.ReadLine();
                 var items = line.Split(",");
-                (int bkNo, string bkName, int ken_no, int si_no) bk = (int.Parse(items[0]), items[1], int.Parse(items[2]), int.Parse(items[3]));
-                sb.AppendLine($"{bk.bkNo},{bk.bkName},{GetKenName(bk.ken_no) + GetSiName(bk.si_no)}");
+                sb.AppendLine($"{int.Parse(items[0])},{items[1]},{GetKenName(int.Parse(items[2])) + GetSiName(int.Parse(items[3]))}");
             }
-            sr.Close();
             sw.Stop();
             Console.WriteLine(sb.ToString());
             Console.WriteLine($"Lesson3:{sw.ElapsedMilliseconds}");
@@ -40,13 +37,13 @@ namespace PerformanceLesson3
             while (sr.Peek() != -1)
             {
                 var line = sr.ReadLine();
-                if (line.Split(",")[0] == kenNo.ToString())
+                var items = line.Split(",");
+                if (items[0] == kenNo.ToString())
                 {
-                    result = line.Split(",")[1];
+                    result = items[1];
                     break;
                 }
             }
-            sr.Close();
             return result;
         }
 
@@ -58,13 +55,13 @@ namespace PerformanceLesson3
             while (sr.Peek() != -1)
             {
                 var line = sr.ReadLine();
-                if (line.Split(",")[0] == siNo.ToString())
+                var items = line.Split(",");
+                if (items[0] == siNo.ToString())
                 {
-                    result = line.Split(",")[1];
+                    result = items[1];
                     break;
                 }
             }
-            sr.Close();
             return result;
         }
     }
