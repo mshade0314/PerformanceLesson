@@ -1,0 +1,16 @@
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\PerformanceLesson2.exe
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\PerformanceLesson2.deps.json
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\PerformanceLesson2.runtimeconfig.json
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\PerformanceLesson2.runtimeconfig.dev.json
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\PerformanceLesson2.dll
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\ref\PerformanceLesson2.dll
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\bin\Debug\net5.0\PerformanceLesson2.pdb
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.csprojAssemblyReference.cache
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.AssemblyInfoInputs.cache
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.AssemblyInfo.cs
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.csproj.CoreCompileInputs.cache
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.dll
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\ref\PerformanceLesson2.dll
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.pdb
+C:\Users\i-nakamura\source\repos\PerformanceLesson\PerformanceLesson2\obj\Debug\net5.0\PerformanceLesson2.genruntimeconfig.cache

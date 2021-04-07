@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PerformanceLesson2/1.0.0": {
+        "runtime": {
+          "PerformanceLesson2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PerformanceLesson2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
