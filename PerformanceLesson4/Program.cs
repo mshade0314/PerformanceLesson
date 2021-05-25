@@ -26,8 +26,8 @@ namespace PerformanceLesson4
                     rdr["bk_name"].ToString(),
                     int.Parse(rdr["addr_kenno"].ToString()),
                     int.Parse(rdr["addr_sino"].ToString()));
-                var kenName = await GetKenNameAsync(con, bk.ken_no);
-                var siName = await GetSiNameAsync(con, bk.si_no);
+                var kenName = await GetKenNameAsync(bk.ken_no);
+                var siName = await GetSiNameAsync(bk.si_no);
                 sb.AppendLine($"{bk.bkNo},{bk.bkName},{kenName + siName}");
             }
             rdr.Close();
@@ -37,8 +37,10 @@ namespace PerformanceLesson4
             Console.WriteLine($"Lesson4:{sw.ElapsedMilliseconds}");
         }
 
-        private static async Task<string> GetKenNameAsync(SQLiteConnection con, int kenNo)
+        private static async Task<string> GetKenNameAsync(int kenNo)
         {
+            using var con = new SQLiteConnection("Data Source=mydb.sqlite;Version=3;");
+            con.Open();
             using var cmd = con.CreateCommand();
             string sql = @"
                 SELECT
@@ -56,8 +58,10 @@ namespace PerformanceLesson4
             return result.ToString();
         }
 
-        private static async Task<string> GetSiNameAsync(SQLiteConnection con, int siNo)
+        private static async Task<string> GetSiNameAsync(int siNo)
         {
+            using var con = new SQLiteConnection("Data Source=mydb.sqlite;Version=3;");
+            con.Open();
             using var cmd = con.CreateCommand();
             string sql = @"
                 SELECT
